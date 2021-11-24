@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fertile_farmland:block/garlic_rooted_dirt_top",
+    "side": "fertile_farmland:block/garlic_rooted_dirt2"
+  }
+}

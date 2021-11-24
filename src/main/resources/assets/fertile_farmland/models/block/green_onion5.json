@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "fertile_farmland:block/green_onion5"
+  }
+}

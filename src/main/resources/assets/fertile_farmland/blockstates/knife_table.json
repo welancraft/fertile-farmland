@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "fertile_farmland:block/knife_table_worst"
+    },
+    "level=2": {
+      "model": "fertile_farmland:block/knife_table_worst"
+    },
+    "level=3": {
+      "model": "fertile_farmland:block/knife_table_worst"
+    },
+    "level=4": {
+      "model": "fertile_farmland:block/knife_table_worst"
+    },
+    "level=5": {
+      "model": "fertile_farmland:block/knife_table_worst"
+    },
+    "level=6": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=7": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=8": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=9": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=10": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=11": {
+      "model": "fertile_farmland:block/knife_table_middle"
+    },
+    "level=12": {
+      "model": "fertile_farmland:block/knife_table_best"
+    },
+    "level=13": {
+      "model": "fertile_farmland:block/knife_table_best"
+    },
+    "level=14": {
+      "model": "fertile_farmland:block/knife_table_best"
+    },
+    "level=15": {
+      "model": "fertile_farmland:block/knife_table_best"
+    },
+    "level=0": {
+      "model": "fertile_farmland:block/knife_table_none"
+    }
+  }
+}

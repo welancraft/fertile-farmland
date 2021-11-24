@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "fertile_farmland:block/steamer"
+    },
+    "lit=true": {
+      "model": "fertile_farmland:block/steamer_on"
+    }
+  }
+}

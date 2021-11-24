@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fertile_farmland:block/wooden_steamer_bottom"
+    },
+    "type=double": {
+      "model": "fertile_farmland:block/wooden_steamer_double"
+    },
+    "type=top": {
+      "model": "fertile_farmland:block/wooden_steamer_bottom"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="GPL v3"
+[[mods]]
+modId="fertile_farmland"
+version="${file.jarVersion}"
+displayName="Fertile Farmland"
+#logoFile="logo.png"
+credits="Thanks to GregTao the partner"
+authors="Team Fractal, GregTao"
+description='''
+'''
+[[dependencies.fertile_farmland]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37.0.83,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.fertile_farmland]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"
