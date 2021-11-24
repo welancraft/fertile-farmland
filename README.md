@@ -1,6 +1,6 @@
 # Fertile Farmland
 
-[>> Dev Build Download <<](https://github.com/welancraft/fertile_farmland/actions)
+[>> Dev Build Download <<](https://github.com/welancraft/fertile-farmland/actions)
 
 
 这是[格雷食物](https://modrinth.com/mod/gregfood) 的Forge移植——沃壤千里的仓库。
