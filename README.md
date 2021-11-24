@@ -9,4 +9,4 @@ This is the repo of project Fertile Farmland, ported from [GregFood](https://mod
 
 特别鸣谢：[GregTao](https://github.com/GregTaoo)
 
-Special thanks to: [GregTap](https://github.com/GregTaoo)
+Special thanks to: [GregTao](https://github.com/GregTaoo)
