@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "fertile_farmland:item/uncooked_kebab_mutton"
-    }
-}

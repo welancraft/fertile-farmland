@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "fertile_farmland:item/kebab_mutton"
+        "layer0": "fertile_farmland:item/marinade"
     }
 }

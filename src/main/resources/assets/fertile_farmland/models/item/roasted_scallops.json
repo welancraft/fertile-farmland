@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "fertile_farmland:item/fried_shell"
+        "layer0": "fertile_farmland:item/roasted_scallops"
     }
 }

@@ -10,9 +10,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class RenderTypeRegistry {
     @SubscribeEvent
     public static void onRenderTypeSetup(FMLClientSetupEvent event) {
-
-
         event.enqueueWork(() -> {
+
         });
     }
 }

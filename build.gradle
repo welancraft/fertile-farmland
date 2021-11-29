@@ -123,9 +123,6 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.k-4u.nl"
     }
-    maven {
-        url = "https://maven.blamejared.com"
-    }
 }
 
 dependencies {
@@ -138,9 +135,6 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-1.17.1:8.1.0.31:api")
     // at runtime, use the full JEI jar
     runtimeOnly fg.deobf("mezz.jei:jei-1.17.1:8.1.0.31")
-
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.17.1-58-20211117.045843-1:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.17.1-58-20211117.045843-1")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
