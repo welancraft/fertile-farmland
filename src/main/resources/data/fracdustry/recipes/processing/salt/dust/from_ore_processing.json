@@ -1,0 +1,12 @@
+{
+  "type": "fracdustry:ore_processor",
+  "ingredients": [
+    {
+      "item": "fertile_farmland:salt_ore"
+    }
+  ],
+  "output": {
+    "item": "fertile_farmland:salt",
+    "count": 6
+  }
+}

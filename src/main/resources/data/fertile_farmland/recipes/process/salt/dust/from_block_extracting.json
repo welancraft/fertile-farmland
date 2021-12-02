@@ -1,0 +1,12 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fertile_farmland:salt_block"
+    }
+  ],
+  "result": {
+    "item": "fertile_farmland:salt",
+    "count":32
+  }
+}

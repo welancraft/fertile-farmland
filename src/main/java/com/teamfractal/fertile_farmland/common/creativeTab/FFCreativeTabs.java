@@ -14,4 +14,11 @@ public class FFCreativeTabs {
             return new ItemStack(FFItems.mantou.get());
         }
     };
+    public static final CreativeModeTab MATERIALS = new CreativeModeTab("fertile_farmland.materials") {
+        @Override
+        @Nonnull
+        public ItemStack makeIcon() {
+            return new ItemStack(FFItems.salt.get());
+        }
+    };
 }

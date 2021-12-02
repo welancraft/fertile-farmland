@@ -1,0 +1,12 @@
+{
+    "type": "smelting",
+    "ingredient": {
+        "item": "fertile_farmland:salt_ore"
+    },
+    "result": {
+        "item": "fertile_farmland:salt",
+        "count": 2
+    },
+    "experience": 1,
+    "cookingtime": 100
+}

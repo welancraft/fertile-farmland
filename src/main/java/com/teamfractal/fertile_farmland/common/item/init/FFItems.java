@@ -1,20 +1,24 @@
 package com.teamfractal.fertile_farmland.common.item.init;
 
+import com.teamfractal.fertile_farmland.common.block.init.FFBlocks;
 import com.teamfractal.fertile_farmland.common.creativeTab.FFCreativeTabs;
 import com.teamfractal.fertile_farmland.common.item.LiquidFilledCupItem;
 import com.teamfractal.fertile_farmland.common.item.food.FFFoods;
 import com.teamfractal.fertile_farmland.common.util.FFRegistryHandler;
 import net.minecraft.world.food.Foods;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
 public class FFItems {
+    /*
+    FOODS
+    */
     public static RegistryObject<Item> glowingApple;
     public static RegistryObject<Item> levitationApple;
     public static RegistryObject<Item> badOmenApple;
     public static RegistryObject<Item> friedDumpling;
     public static RegistryObject<Item> biscuit;
-    public static RegistryObject<Item> saltBucket;
     public static RegistryObject<Item> goldenBean;
     public static RegistryObject<Item> roujiamo;
     public static RegistryObject<Item> muttonKebab;
@@ -33,9 +37,19 @@ public class FFItems {
     public static RegistryObject<Item> mantou;
     public static RegistryObject<Item> greenOnionLeaf;
     public static RegistryObject<Item> garlicLeaf;
+    /*
+    SALT_RELEVANT
+    */
+    public static RegistryObject<Item> salt;
+    public static RegistryObject<Item> oreSalt;
+    public static RegistryObject<Item> blockSalt;
+    public static RegistryObject<Item> bucketSalt;
 
 
     public static void register(){
+        /*
+        FOODS
+        */
         glowingApple = FFRegistryHandler.Items.register("glowing_apple"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.GLOWING_APPLE)));
         levitationApple = FFRegistryHandler.Items.register("levitation_apple"
@@ -46,8 +60,6 @@ public class FFItems {
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.FRIED_DUMPLING)));
         biscuit = FFRegistryHandler.Items.register("biscuit"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.BISCUIT)));
-        saltBucket = FFRegistryHandler.Items.register("salt_bucket"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.SALT_BUCKET)));
         goldenBean = FFRegistryHandler.Items.register("golden_bean"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.GOLDEN_BEAN)));
         roujiamo = FFRegistryHandler.Items.register("roujiamo"
@@ -85,5 +97,17 @@ public class FFItems {
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(Foods.CARROT)));
         garlicLeaf = FFRegistryHandler.Items.register("garlic_leaf"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(Foods.CARROT)));
+
+        /*
+        SALT_RELEVANT
+        */
+        salt = FFRegistryHandler.Items.register("salt"
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        oreSalt = FFRegistryHandler.Items.register("salt_ore"
+                ,() -> new BlockItem(FFBlocks.oreSalt.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        blockSalt = FFRegistryHandler.Items.register("salt_block"
+                ,() -> new BlockItem(FFBlocks.blockSalt.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        bucketSalt = FFRegistryHandler.Items.register("salt_bucket"
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.SALT_BUCKET)));
     }
 }
