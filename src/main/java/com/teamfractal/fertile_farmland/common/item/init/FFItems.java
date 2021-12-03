@@ -1,5 +1,6 @@
 package com.teamfractal.fertile_farmland.common.item.init;
 
+
 import com.teamfractal.fertile_farmland.common.block.init.FFBlocks;
 import com.teamfractal.fertile_farmland.common.creativeTab.FFCreativeTabs;
 import com.teamfractal.fertile_farmland.common.item.LiquidFilledCupItem;
@@ -8,6 +9,7 @@ import com.teamfractal.fertile_farmland.common.util.FFRegistryHandler;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.fmllegacy.RegistryObject;
 
 public class FFItems {
@@ -44,6 +46,12 @@ public class FFItems {
     public static RegistryObject<Item> oreSalt;
     public static RegistryObject<Item> blockSalt;
     public static RegistryObject<Item> bucketSalt;
+    /*
+    CROP_RELEVANT
+    */
+    public static RegistryObject<Item> greenOnion;
+    public static RegistryObject<Item> soybean;
+    public static RegistryObject<Item> turnip;
 
 
     public static void register(){
@@ -108,6 +116,15 @@ public class FFItems {
         blockSalt = FFRegistryHandler.Items.register("salt_block"
                 ,() -> new BlockItem(FFBlocks.blockSalt.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
         bucketSalt = FFRegistryHandler.Items.register("salt_bucket"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.SALT_BUCKET)));
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.SALT_BUCKET).craftRemainder(Items.BUCKET)));
+        /*
+        CROP_RELEVANT
+        */
+        greenOnion = FFRegistryHandler.Items.register("green_onion"
+                ,() -> new BlockItem(FFBlocks.cropGreenOnion.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        soybean = FFRegistryHandler.Items.register("soybean"
+                ,() -> new BlockItem(FFBlocks.cropSoybean.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        turnip = FFRegistryHandler.Items.register("turnip"
+                ,() -> new BlockItem(FFBlocks.cropTurnip.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
     }
 }
