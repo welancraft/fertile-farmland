@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "fertile_farmland:block/evaporating_pan"
+    },
+    "age=1": {
+      "model": "fertile_farmland:block/evaporating_pan1"
+    },
+    "age=2": {
+      "model": "fertile_farmland:block/evaporating_pan1"
+    },
+    "age=3": {
+      "model": "fertile_farmland:block/evaporating_pan3"
+    }
+  }
+}

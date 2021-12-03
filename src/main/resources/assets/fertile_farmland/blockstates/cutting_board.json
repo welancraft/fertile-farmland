@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fertile_farmland:block/cutting_board"
+    },
+    "facing=south": {
+      "model": "fertile_farmland:block/cutting_board"
+    },
+    "facing=east": {
+      "model": "fertile_farmland:block/cutting_board",
+      "y":90
+    },
+    "facing=west": {
+      "model": "fertile_farmland:block/cutting_board",
+      "y":90
+    },
+    "facing=up": {
+      "model": "fertile_farmland:block/cutting_board"
+    },
+    "facing=down": {
+      "model": "fertile_farmland:block/cutting_board"
+    }
+  }
+}

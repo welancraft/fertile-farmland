@@ -1,0 +1,36 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    },
+    {
+      "item": "fertile_farmland:salt"
+    }
+  ],
+  "result": {
+    "item": "fertile_farmland:salt_bucket",
+    "count":1
+  }
+}

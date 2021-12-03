@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fertile_farmland:block/garlic1"
+  }
+}

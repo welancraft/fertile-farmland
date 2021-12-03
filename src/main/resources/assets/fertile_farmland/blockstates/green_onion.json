@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "fertile_farmland:block/green_onion0" },
+    "age=1": { "model": "fertile_farmland:block/green_onion1" },
+    "age=2": { "model": "fertile_farmland:block/green_onion2" },
+    "age=3": { "model": "fertile_farmland:block/green_onion3" },
+    "age=4": { "model": "fertile_farmland:block/green_onion4" },
+    "age=5": { "model": "fertile_farmland:block/green_onion5" },
+    "age=6": { "model": "fertile_farmland:block/green_onion6" },
+    "age=7": { "model": "fertile_farmland:block/green_onion7" }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "fertile_farmland:block/steamer_top_on",
+    "front": "fertile_farmland:block/steamer_side",
+    "side": "fertile_farmland:block/steamer_side"
+  }
+}
