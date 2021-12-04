@@ -17,6 +17,7 @@ public class RenderTypeRegistry {
             ItemBlockRenderTypes.setRenderLayer(FFBlocks.cropGreenOnion.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(FFBlocks.cropSoybean.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(FFBlocks.cropTurnip.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(FFBlocks.cropTea.get(), RenderType.cutout());
         });
     }
 }

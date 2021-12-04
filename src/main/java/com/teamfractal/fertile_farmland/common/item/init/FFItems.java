@@ -5,7 +5,6 @@ import com.teamfractal.fertile_farmland.common.creativeTab.FFCreativeTabs;
 import com.teamfractal.fertile_farmland.common.item.LiquidFilledCupItem;
 import com.teamfractal.fertile_farmland.common.item.food.FFFoods;
 import com.teamfractal.fertile_farmland.common.util.FFRegistryHandler;
-import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -15,9 +14,6 @@ public class FFItems {
     /*
     FOODS
     */
-    public static RegistryObject<Item> glowingApple;
-    public static RegistryObject<Item> levitationApple;
-    public static RegistryObject<Item> badOmenApple;
     public static RegistryObject<Item> friedDumpling;
     public static RegistryObject<Item> biscuit;
     public static RegistryObject<Item> goldenBean;
@@ -30,7 +26,9 @@ public class FFItems {
     public static RegistryObject<Item> steamedRice;
     public static RegistryObject<Item> friedNoodles;
     public static RegistryObject<Item> friedRice;
+    public static RegistryObject<Item> tea;
     public static RegistryObject<Item> teaEgg;
+    public static RegistryObject<Item> teaSeed;
     public static RegistryObject<Item> marinade;
     public static RegistryObject<Item> brinedTurnip;
     public static RegistryObject<Item> brinedPork;
@@ -51,18 +49,18 @@ public class FFItems {
     public static RegistryObject<Item> greenOnion;
     public static RegistryObject<Item> soybean;
     public static RegistryObject<Item> turnip;
+    public static RegistryObject<Item> teaRoot;
+    public static RegistryObject<Item> teaRootedDirt;
+    /*
+    TOOLS
+    */
+    public static RegistryObject<Item> weedingShovel;
 
 
     public static void register(){
         /*
         FOODS
         */
-        glowingApple = FFRegistryHandler.Items.register("glowing_apple"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.GLOWING_APPLE)));
-        levitationApple = FFRegistryHandler.Items.register("levitation_apple"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.LEVITATION_APPLE)));
-        badOmenApple = FFRegistryHandler.Items.register("bad_omen_apple"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.BAD_OMEN_APPLE)));
         friedDumpling = FFRegistryHandler.Items.register("fried_dumpling"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.FRIED_DUMPLING)));
         biscuit = FFRegistryHandler.Items.register("biscuit"
@@ -88,8 +86,14 @@ public class FFItems {
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.FRIED_NOODLES)));
         friedRice = FFRegistryHandler.Items.register("fried_rice"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.FRIED_RICE)));
+        tea = FFRegistryHandler.Items.register("tea"
+                ,() -> new BlockItem(FFBlocks.cropTea.get(), new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.UNFEDIBLE_PLANT)));
         teaEgg = FFRegistryHandler.Items.register("tea_egg"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.TEA_EGG)));
+        teaSeed = FFRegistryHandler.Items.register("tea_seed"
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        teaRoot = FFRegistryHandler.Items.register("tea_root"
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
         marinade = FFRegistryHandler.Items.register("marinade"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.MARINADE)));
         brinedTurnip = FFRegistryHandler.Items.register("brined_turnip"
@@ -101,9 +105,9 @@ public class FFItems {
         mantou = FFRegistryHandler.Items.register("mantou"
                 ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.MANTOU)));
         greenOnionLeaf = FFRegistryHandler.Items.register("green_onion_leaf"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(Foods.CARROT)));
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.UNFEDIBLE_PLANT)));
         garlicLeaf = FFRegistryHandler.Items.register("garlic_leaf"
-                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(Foods.CARROT)));
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.FOODS).food(FFFoods.UNFEDIBLE_PLANT)));
 
         /*
         SALT_RELEVANT
@@ -125,5 +129,12 @@ public class FFItems {
                 ,() -> new BlockItem(FFBlocks.cropSoybean.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
         turnip = FFRegistryHandler.Items.register("turnip"
                 ,() -> new BlockItem(FFBlocks.cropTurnip.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        teaRootedDirt = FFRegistryHandler.Items.register("tea_rooted_dirt"
+                ,() -> new BlockItem(FFBlocks.teaRootedDirt.get(), new Item.Properties().tab(FFCreativeTabs.MATERIALS)));
+        /*
+        TOOLS
+        */
+        weedingShovel = FFRegistryHandler.Items.register("weeding_shovel"
+                ,() -> new Item(new Item.Properties().tab(FFCreativeTabs.TOOLS).durability(64).setNoRepair()));
     }
 }

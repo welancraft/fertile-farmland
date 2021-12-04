@@ -21,4 +21,11 @@ public class FFCreativeTabs {
             return new ItemStack(FFItems.salt.get());
         }
     };
+    public static final CreativeModeTab TOOLS = new CreativeModeTab("fertile_farmland.tools") {
+        @Override
+        @Nonnull
+        public ItemStack makeIcon() {
+            return new ItemStack(FFItems.weedingShovel.get());
+        }
+    };
 }

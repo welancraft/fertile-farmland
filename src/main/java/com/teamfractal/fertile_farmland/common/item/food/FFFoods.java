@@ -5,9 +5,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class FFFoods {
-    public static final FoodProperties GLOWING_APPLE = new FoodProperties.Builder().nutrition(6).saturationMod(2.5F).effect(new MobEffectInstance(MobEffects.GLOWING,1200,0),1.0F).build();
-    public static final FoodProperties LEVITATION_APPLE = new FoodProperties.Builder().nutrition(6).saturationMod(2.5F).effect(new MobEffectInstance(MobEffects.LEVITATION,400,0),1.0F).build();
-    public static final FoodProperties BAD_OMEN_APPLE = new FoodProperties.Builder().nutrition(6).saturationMod(2.5F).effect(new MobEffectInstance(MobEffects.BAD_OMEN,400,0),1.0F).build();
     public static final FoodProperties FRIED_DUMPLING = new FoodProperties.Builder().nutrition(3).saturationMod(0.5F).fast().build();
     public static final FoodProperties BISCUIT = new FoodProperties.Builder().nutrition(4).saturationMod(4F).fast().build();
     public static final FoodProperties SALT_BUCKET = new FoodProperties.Builder().nutrition(2).saturationMod(0.5F).effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,200,0),0.25F).build();
@@ -28,5 +25,6 @@ public class FFFoods {
     public static final FoodProperties BRINED_PORK = new FoodProperties.Builder().nutrition(6).saturationMod(3F).build();
     public static final FoodProperties ROASTED_SCALLOPS = new FoodProperties.Builder().nutrition(5).saturationMod(2F).build();
     public static final FoodProperties MANTOU = new FoodProperties.Builder().nutrition(3).saturationMod(2F).build();
+    public static final FoodProperties UNFEDIBLE_PLANT = new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build();
 
 }

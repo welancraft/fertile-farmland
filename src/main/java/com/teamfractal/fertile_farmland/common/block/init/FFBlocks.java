@@ -2,7 +2,9 @@ package com.teamfractal.fertile_farmland.common.block.init;
 
 import com.teamfractal.fertile_farmland.common.block.crops.impl.GreenOnionCrop;
 import com.teamfractal.fertile_farmland.common.block.crops.impl.SoybeanCrop;
+import com.teamfractal.fertile_farmland.common.block.crops.impl.TeaCrop;
 import com.teamfractal.fertile_farmland.common.block.crops.impl.TurnipCrop;
+import com.teamfractal.fertile_farmland.common.block.others.TeaRootedDirt;
 import com.teamfractal.fertile_farmland.common.util.FFRegistryHandler;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FallingBlock;
@@ -23,6 +25,10 @@ public class FFBlocks {
     public static RegistryObject<Block> cropSoybean;
     public static RegistryObject<Block> cropTurnip;
 
+    public static RegistryObject<Block> teaRootedDirt;
+    public static RegistryObject<Block> cropTea;
+
+
     public static void register(){
         //Salt relevant
         oreSalt = FFRegistryHandler.Blocks.register("salt_ore"
@@ -36,5 +42,9 @@ public class FFBlocks {
                 , SoybeanCrop::new);
         cropTurnip = FFRegistryHandler.Blocks.register("turnip"
                 , TurnipCrop::new);
+        teaRootedDirt = FFRegistryHandler.Blocks.register("tea_rooted_dirt"
+                , TeaRootedDirt::new);
+        cropTea = FFRegistryHandler.Blocks.register("tea"
+                , TeaCrop::new);
     }
 }
